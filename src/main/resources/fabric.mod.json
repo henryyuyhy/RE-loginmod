@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "mclogin",
+  "version": "${version}",
+
+  "name": "RE:MCLogin",
+  "description": "Protection for offline-mode servers",
+  "authors": [
+    "molaeiali",
+    "henryyuyhy"
+  ],
+  "contact": {
+    "homepage": "https://github.com/molaeiali/mclogin",
+    "sources": "https://github.com/molaeiali/mclogin",
+    "issues": "https://github.com/molaeiali/mclogin/issues"
+  },
+
+  "license": "GPLv2",
+  "icon": "",
+
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "org.molaei.mclogin.LoginMod"
+    ]
+  },
+  "mixins": [
+    "login.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.11",
+    "fabric": "*",
+    "minecraft": "1.17.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
